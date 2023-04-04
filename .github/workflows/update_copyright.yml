@@ -11,7 +11,7 @@ jobs:
       - name: Update copyright year
         run: |
           year=$(date +%Y)
-          sed -Ei'' -e 's/^(.*Copyright\s*)([0-9]{4})([^\d&ndash;-]|(-|&ndash;|–))?\s*Vit Profant/\1\2 - '"$(date +%Y)"' Vit Profant/g' .
+          sed -Ei'' -e 's/^(.*Copyright\s*)([0-9]{4})([^\d&ndash;-]|(-|&ndash;|–))?\s*Vit Profant/\1\2 - '"$(date +%Y)"' Vit Profant/g' *
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
