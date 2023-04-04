@@ -1,7 +1,7 @@
-"Whatever Copyright 2013 Vit Profant"
-"666 Copyright 2013-2014 Vit Profant"
-"Copyright 2013 - 2014 Vit Profant"
-"89- Copyright 2013–2014 Vit Profant"
-" Copyright 2013 – 2014 Vit Profant"
-"(Copyright 2013&ndash;2014 Vit Profant"
-"ab1 Copyright 2013 &ndash; 2014 Vit Profant"
+Whatever Copyright 2013 Vit Profant
+666 Copyright 2013-2014 Vit Profant
+Copyright 2013 - 2014 Vit Profant
+89- Copyright 2013–2014 Vit Profant
+ Copyright 2013 – 2014 Vit Profant
+(Copyright 2013&ndash;2014 Vit Profant
+ab1 Copyright 2013 &ndash; 2014 Vit Profant
