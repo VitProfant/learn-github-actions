@@ -1,0 +1,23 @@
+name: Update copyright year
+
+on: push
+
+jobs:
+  update_copyright:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Update copyright year
+        run: |
+          year=$(date +%Y)
+          sed -Ei'' -e 's/^(.*Copyright\s*)([0-9]{4})([^\d&ndash;-]|(-|&ndash;|–))?\s*Vit Profant/\1\2 - '"$(date +%Y)"' Vit Profant/g'
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git commit -m "Update copyright year to $year" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
